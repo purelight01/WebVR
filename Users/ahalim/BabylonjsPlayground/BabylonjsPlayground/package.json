@@ -1,0 +1,17 @@
+{
+ "version": "1.0.0",
+ "name": "BabylonjsPlayground",
+ "private": true,
+ "dependencies": {
+  "@types/babylonjs": "2.4.1",
+  "@types/requirejs": "2.1.31",
+  "babylonjs": "3.1.0-beta1.1.1",
+  "babylonjs-gui": "^3.1.0-beta3",
+  "babylonjs-loaders": "^3.1.0-beta3",
+  "babylonjs-materials": "^3.1.0-beta3",
+  "cannon": "0.6.2",
+  "oimo": "^1.0.9",
+  "requirejs": "2.3.5"
+ },
+ "devDependencies": {}
+}
