@@ -1,0 +1,27 @@
+﻿{
+  "compilerOptions": {
+    "module": "amd",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "wwwroot",
+    "sourceRoot": "ClientApp",
+    "mapRoot": "wwwroot",
+    "types": [
+      "requirejs",
+      "babylonjs",
+      //"babylonjs-loaders"
+      "babylonjs-gui"
+    ],
+   "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "lib": ["dom", "es2015.promise", "es5"],
+    "noImplicitReturns": true,
+    "noImplicitThis": true
+    //"noUnusedLocals": true
+    //"strictNullChecks": true
+  },
+
+  "compileOnSave": true,
+  "exclude": [ "bin", "node_modules" ]
+}
+

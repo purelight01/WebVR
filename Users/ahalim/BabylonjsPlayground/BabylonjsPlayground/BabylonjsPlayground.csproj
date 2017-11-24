@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\Basic\Action.ts" />
+    <None Remove="ClientApp\Basic\Animation.ts" />
+    <None Remove="ClientApp\Basic\BasicMaterials.ts" />
+    <None Remove="ClientApp\Basic\BasicShapes2.ts" />
+    <None Remove="ClientApp\Basic\Collision.ts" />
+    <None Remove="ClientApp\Basic\PostProcess.ts" />
+    <None Remove="ClientApp\Basic\SceneLoading.ts" />
+    <None Remove="ClientApp\Basic\Sound.ts" />
+    <None Remove="ClientApp\Basic\VRHelper.ts" />
+    <None Remove="ClientApp\Common.ts" />
+    <None Remove="ClientApp\Game.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\Basic\Action.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\Animation.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\BasicMaterials.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\BasicShapes2.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\Collision.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\PostProcess.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\SceneLoading.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\Sound.ts" />
+    <TypeScriptCompile Include="ClientApp\Basic\VRHelper.ts" />
+    <TypeScriptCompile Include="ClientApp\Common.ts" />
+    <TypeScriptCompile Include="ClientApp\Game.ts" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="copyfiles.cmd" />
+  </Target>
+
+</Project>
